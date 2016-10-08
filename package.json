@@ -1,0 +1,36 @@
+{
+  "name": "cordova-plugin-getdeviceid",
+  "version": "0.0.1",
+  "description": "codrova/phonegap wrapper for qcloud sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giantss/cordova-plugin-getdeviceid.git"
+  },
+  "cordova": {
+    "id": "cordova-plugin-getdeviceid",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova",
+    "phonegap",
+    "plugin",
+    "getdeviceid",
+    "deviceid"
+  ],
+  "author": "https://github.com/giantss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giantss/cordova-plugin-getdeviceid/issues"
+  },
+  "homepage": "https://github.com/giantss/cordova-plugin-getdeviceid"
+}

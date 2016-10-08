@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-getdeviceid"
+        version="0.0.1">
+
+  <name>DeviceInfo</name>
+  <description>Cordova DeviceInfo Plugin</description>
+  <license>MIT</license>
+  <keywords>cordova,DeviceInfo</keywords>
+  <repo>https://github.com/giantss/cordova-plugin-getdeviceid</repo>
+  <issue>https://github.com/giantss/cordova-plugin-getdeviceid/issues</issue>
+
+  <!--require cordova version -->
+  <engines>
+    <engine name="cordova" version=">=4.0.0" />
+    <engine name="cordova-android" version=">=4.0.0" />
+  </engines>
+
+  <!-- js module-->
+  <js-module src="www/DeviceInfo.js" name="DeviceInfo">
+    <clobbers target="DeviceInfo" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="DeviceInfo">
+        <param name="ios-package" value="DeviceInfo"/>
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/DeviceInfo.h"/>
+    <source-file src="src/ios/DeviceInfo.m"/>
+  </platform>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="DeviceInfo" >
+        <param name="android-package" value="com.giants.util.DeviceInfo"/>
+      </feature>
+    </config-file>
+    <source-file src="src/android/DeviceInfo.java" target-dir="src/com/giants/util" />
+  </platform>
+</plugin>
