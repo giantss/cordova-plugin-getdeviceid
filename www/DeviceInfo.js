@@ -7,6 +7,6 @@ var exec = require('cordova/exec'),
 module.exports = {
 
     getDeviceId: function (successCallback, errorCallback) {
-        exec(successCallback, errorCallback, "DeviceInfo", "initAuth", []);
+        exec(successCallback, errorCallback, "DeviceInfo", "getDeviceId", []);
     }
 };
